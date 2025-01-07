@@ -76,7 +76,7 @@ def run_vae_pipeline(dataset_name: str, vae_type: str):
         samples1_name="Original Train",
         samples2=x_decoded,
         samples2_name="Reconstructed Train",
-        num_samples=5,
+        num_samples=3,
     )
     # ----------------------------------------------------------------------------------
     # Generate prior samples, visualize and save them
@@ -132,7 +132,7 @@ def run_vae_pipeline(dataset_name: str, vae_type: str):
 
 if __name__ == "__main__":
     # check `/data/` for available datasets
-    dataset = "sine_subsampled_train_perc_20"
+    dataset = "macroeconomic"
 
     # models: vae_dense, vae_conv, timeVAE
     model_name = "timeVAE"
